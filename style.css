@@ -57,6 +57,7 @@ body {
   justify-content: start;
   align-items: center;
   gap: 2rem;
+  margin-left: 50px;
 }
 
 .button {
@@ -98,6 +99,13 @@ body {
   width: 100%;
 }
 
+.menue-1 img,
+.menue-2 img {
+  width: 30px;
+  height: auto;
+  filter: invert();
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -130,13 +138,69 @@ a {
   gap: 10px;
 }
 
-img {
-  width: 30px;
-  filter: invert();
-}
-
 /* main */
 .main {
   grid-row: 2/-1;
   grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+}
+
+.projects {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 250px);
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+
+.pro-card {
+  background-color: var(--color-2);
+  box-shadow: 10px 20px 30px black;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.pro-card p {
+  overflow: hidden;
+}
+
+.card-icon {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.announcements {
+  grid-column: 2/-1;
+  box-shadow: 2px 5px 10px black inset;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ann-card {
+  padding: 10px;
+  box-shadow: 2px 5px 10px black;
+  background-color: var(--color-2);
+}
+
+.ann-card h5 {
+  font-size: larger;
+  color: white;
+}
+
+.trending {
+  grid-column: 2/-1;
+  box-shadow: 2px 5px 10px black inset;
+  padding: 20px;
 }
