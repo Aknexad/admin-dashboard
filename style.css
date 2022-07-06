@@ -177,7 +177,8 @@ a {
   gap: 20px;
 }
 
-.announcements {
+.announcements,
+.trending {
   grid-column: 2/-1;
   box-shadow: 2px 5px 10px black inset;
   padding: 20px;
@@ -199,8 +200,11 @@ a {
   color: white;
 }
 
-.trending {
-  grid-column: 2/-1;
-  box-shadow: 2px 5px 10px black inset;
+.tre-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 5px 10px 15px black;
   padding: 20px;
 }
