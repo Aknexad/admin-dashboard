@@ -214,7 +214,7 @@ a {
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
 }
 
 .announcements {
@@ -241,29 +241,37 @@ a {
   align-items: center;
   gap: 20px;
   box-shadow: 5px 10px 15px black;
-  padding: 20px;
   background-color: var(--color-2);
   color: var(--color-3);
-  width: 280px;
+  width: 250px;
+  padding: 10px;
 }
 
 .chose {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 10px;
 }
 
-.chose > button {
+.ann,
+.tre {
   font-size: 1.4rem;
   background-color: #06040d;
   color: white;
   padding: 8px 20px;
+  margin: 0;
   border: none;
 }
 
-.chose > button:hover {
+#ann {
   background-color: #fff;
-  color: black;
+  color: #06040d;
+  box-shadow: 2px 4px 8px black inset;
+}
+
+.chose > button:hover {
+  background-color: white;
+  color: #06040d;
   filter: blur(20%);
+  box-shadow: 2px 4px 8px black inset;
 }
