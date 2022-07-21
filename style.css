@@ -182,9 +182,8 @@ a {
   background-color: var(--color-2);
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
-  gap: 10px;
   box-shadow: 10px 20px 30px black;
-  padding: 20px;
+  padding: 10px;
   border-top: 5px solid black;
   border-left: 5px solid black;
 }
@@ -195,7 +194,7 @@ a {
 }
 
 .pro-card h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--color-4);
 }
 
